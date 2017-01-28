@@ -12,9 +12,13 @@
 		43F26FDA1E3D344E006D2171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F26FD81E3D344E006D2171 /* Main.storyboard */; };
 		43F26FDC1E3D344E006D2171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43F26FDB1E3D344E006D2171 /* Assets.xcassets */; };
 		43F26FDF1E3D344E006D2171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43F26FDD1E3D344E006D2171 /* LaunchScreen.storyboard */; };
+		43F26FE71E3D3FFB006D2171 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43F26FE61E3D3FFB006D2171 /* GoogleService-Info.plist */; };
+		FA890DF947DD9FF44DE79E62 /* Pods_mchacks17.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7F32422AE4D6D398304FF6 /* Pods_mchacks17.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E7F32422AE4D6D398304FF6 /* Pods_mchacks17.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mchacks17.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29A1AC246ABBA9C129853CEC /* Pods-mchacks17.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mchacks17.release.xcconfig"; path = "Pods/Target Support Files/Pods-mchacks17/Pods-mchacks17.release.xcconfig"; sourceTree = "<group>"; };
 		43F26FD11E3D344E006D2171 /* mchacks17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mchacks17.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F26FD41E3D344E006D2171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43F26FD61E3D344E006D2171 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		43F26FDB1E3D344E006D2171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43F26FDE1E3D344E006D2171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43F26FE01E3D344E006D2171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43F26FE61E3D3FFB006D2171 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CC8AB6C59F58CC1F83FBF925 /* Pods-mchacks17.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mchacks17.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mchacks17/Pods-mchacks17.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA890DF947DD9FF44DE79E62 /* Pods_mchacks17.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		286B080CA089331D64DEABD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E7F32422AE4D6D398304FF6 /* Pods_mchacks17.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		43F26FC81E3D344E006D2171 = {
 			isa = PBXGroup;
 			children = (
 				43F26FD31E3D344E006D2171 /* mchacks17 */,
 				43F26FD21E3D344E006D2171 /* Products */,
+				8814C682C958877C6EBA96AC /* Pods */,
+				286B080CA089331D64DEABD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +71,7 @@
 		43F26FD31E3D344E006D2171 /* mchacks17 */ = {
 			isa = PBXGroup;
 			children = (
+				43F26FE61E3D3FFB006D2171 /* GoogleService-Info.plist */,
 				43F26FD41E3D344E006D2171 /* AppDelegate.swift */,
 				43F26FD61E3D344E006D2171 /* ViewController.swift */,
 				43F26FD81E3D344E006D2171 /* Main.storyboard */,
@@ -64,6 +82,15 @@
 			path = mchacks17;
 			sourceTree = "<group>";
 		};
+		8814C682C958877C6EBA96AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC8AB6C59F58CC1F83FBF925 /* Pods-mchacks17.debug.xcconfig */,
+				29A1AC246ABBA9C129853CEC /* Pods-mchacks17.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43F26FE31E3D344E006D2171 /* Build configuration list for PBXNativeTarget "mchacks17" */;
 			buildPhases = (
+				25E76380B8E7D0CBC78357A4 /* [CP] Check Pods Manifest.lock */,
 				43F26FCD1E3D344E006D2171 /* Sources */,
 				43F26FCE1E3D344E006D2171 /* Frameworks */,
 				43F26FCF1E3D344E006D2171 /* Resources */,
+				B11C4611FC01FE50FC52C81B /* [CP] Embed Pods Frameworks */,
+				546B1A726360099B1DF8ACFB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				43F26FDF1E3D344E006D2171 /* LaunchScreen.storyboard in Resources */,
+				43F26FE71E3D3FFB006D2171 /* GoogleService-Info.plist in Resources */,
 				43F26FDC1E3D344E006D2171 /* Assets.xcassets in Resources */,
 				43F26FDA1E3D344E006D2171 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25E76380B8E7D0CBC78357A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		546B1A726360099B1DF8ACFB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mchacks17/Pods-mchacks17-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B11C4611FC01FE50FC52C81B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mchacks17/Pods-mchacks17-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		43F26FCD1E3D344E006D2171 /* Sources */ = {
@@ -256,6 +335,7 @@
 		};
 		43F26FE41E3D344E006D2171 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC8AB6C59F58CC1F83FBF925 /* Pods-mchacks17.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mchacks17/Info.plist;
@@ -268,6 +348,7 @@
 		};
 		43F26FE51E3D344E006D2171 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29A1AC246ABBA9C129853CEC /* Pods-mchacks17.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mchacks17/Info.plist;

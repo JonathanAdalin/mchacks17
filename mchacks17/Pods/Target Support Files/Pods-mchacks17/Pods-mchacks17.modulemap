@@ -1,0 +1,6 @@
+framework module Pods_mchacks17 {
+  umbrella header "Pods-mchacks17-umbrella.h"
+
+  export *
+  module * { export * }
+}
